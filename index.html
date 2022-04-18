@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>tom-codez Survey Form</title>
+    </head>
+
+    <body class="bg">
+        <main>
+            <div id="heading">
+                <h1 id="title">tom-codez Survey Form</h1><br>
+                <p id="description"><em>Thank you for taking the time to give feedback on my work</em></p>
+            </div>
+            <form id="survey-form">
+                <label for="name" id="name-label">Name:</label><br>
+                <input type="text" id="name" placeholder="Enter your name" class="spacing" required><br>
+                <label for="email" id="email-label">Email:</label><br>
+                <input type="email" id="email" placeholder="Enter your email" class="spacing" required><br>
+                <label for="number" id="number-label">Age (optional):</label><br>
+                <input type="number" id="number" min="16" max="80" placeholder="Enter your age" class="spacing"><br>
+                <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label><br>
+                <select id="dropdown" name="current-role" class="spacing" required>
+                    <option value="">Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Employed (full-time)">Employed (Full-Time)</option>
+                    <option value="Employed (part-time)">Employed (Part-Time)</option>
+                    <option value="Learner">Learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select><br>
+                <label for="radio-group" id="radio-group-label">Would you recommend tom-codez to a friend/colleague?</label><br>
+                    <label for="yes"><input type="radio" id="yes" value="yes" name="radio-group">Yes</label>
+                    <label for="maybe"><input type="radio" id="maybe" value="maybe" name="radio-group" required>Maybe</label>
+                    <label for="no"><input type="radio" id="no" value="no" name="radio-group">No</label><br>
+                <label for="checkbox" id="checkbox-label">What could I improve in my projects? (select all that apply)</label><br>
+                    <label for="html"><input type="checkbox" value="html" id="html" name="checkbox">HTML</label>
+                    <label for="css"><input type="checkbox" value="css" id="css" name="checkbox">CSS</label>
+                    <label for="js"><input type="checkbox" value="js" id="js" name="checkbox">JavaScript</label>
+                    <label for="ui/ux"><input type="checkbox" value="ui/ux" id="ui/ux" name="checkbox">UI/UX</label>
+                    <label for="unsure"><input type="checkbox" value="unsure" id="unsure" name="checkbox" required>Unsure</label><br>
+                <label for="textarea" id="textarea-label">Any additional comments or suggestions?</label><br>
+                    <textarea id="textarea" placeholder="Enter your comments here..."></textarea><br>
+                <button id="submit" name="submit" class="spacing">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
